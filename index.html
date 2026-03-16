@@ -630,8 +630,9 @@ function updateRequestStatus(i, status){
 // ═══════════════════════════════════════════
 // 7. UPLOAD + AUTO-LOAD FROM GITHUB
 // ═══════════════════════════════════════════
-const DATA_FILES = ['catalog.json'];
-const DESCRIPTIONS_FILE = 'bq_catalog_descriptions.json';
+const BASE_URL = 'https://onkarkulkarni1988.github.io/simpro-data-catalog';
+const DATA_FILES = [`${BASE_URL}/Catalog.json`];
+const DESCRIPTIONS_FILE = `${BASE_URL}/bq_catalog_descriptions.json`;
 
 async function autoLoadFromGitHub(){
   document.getElementById('main').innerHTML=`
